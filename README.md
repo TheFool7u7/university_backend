@@ -1,6 +1,103 @@
 # university_backend
 
 
+necesita arreglos aun, importante debo de verificar que MySQL esté corriendo la base de datos.
+
+
+
+prmero verificar si esta instalado y funcionan las dependencias:
+
+Para correr el servidor de Python (Flask), sigue estos pasos:
+
+Primero, asegúrate de estar en el directorio correcto de tu proyecto:
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+cd university_backend
+Activa el entorno virtual:
+En Windows:
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+venv\Scripts\activate
+En MacOS/Linux:
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+source venv/bin/activate
+Verifica que tienes todas las dependencias instaladas:
+
+pip install flask flask-sqlalchemy flask-cors pymysql cryptography
+
+Para ejecutar el servidor, hay dos formas:
+
+Método 1 - Usando el archivo run.py:
+
+python run.py
+
+Método 2 - Usando variables de entorno de Flask:
+
+# En Windows:
+set FLASK_APP=app
+set FLASK_ENV=development
+flask run
+
+# En MacOS/Linux:
+export FLASK_APP=app
+export FLASK_ENV=development
+flask run
+Si todo está correcto, deberías ver algo como esto en la terminal:
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Reloader: active
+ * Debugger is active!
+ * Debugger PIN: xxx-xxx-xxx
+Esto significa que tu servidor está corriendo en localhost:5000.
+
+Para probar que el servidor está funcionando:
+
+Abre tu navegador
+Ve a http://localhost:5000/api/auth/login
+Si recibes un error 405 Method Not Allowed, eso es normal porque esta ruta solo acepta POST. Esto confirma que tu servidor está funcionando correctamente.
+
+Para detener el servidor:
+
+Presiona Ctrl + C en la terminal
+
+
+para instalar:
+
+# Activar el entorno virtual
+# En Windows:
+venv\Scripts\activate
+# En MacOS/Linux:
+source venv/bin/activate
+
+# Instalar las dependencias necesarias
+pip install flask
+pip install flask-sqlalchemy
+pip install flask-cors
+pip install pymysql
+pip install cryptography
+
+
+
+
+
 Hasta ahora se ha configurado la estructura básica del backend con Flask. Ahora necesitamos:
 
 Conectar la aplicación JavaFX con el backend Flask. Para esto, necesitarás agregar dependencias HTTP en tu proyecto JavaFX:
