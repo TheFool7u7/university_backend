@@ -7,35 +7,18 @@ necesita arreglos aun, importante debo de verificar que MySQL esté corriendo la
 
 prmero verificar si esta instalado y funcionan las dependencias:
 
-Para correr el servidor de Python (Flask), sigue estos pasos:
+Para correr el servidor de Python (Flask), seguir estos pasos:
 
-Primero, asegúrate de estar en el directorio correcto de tu proyecto:
-bash
+Primero, asegúrate de estar en el directorio correcto en el proyecto:
 
-Verify
 
-Open In Editor
-Edit
-Copy code
 cd university_backend
 Activa el entorno virtual:
 En Windows:
-bash
 
-Verify
-
-Open In Editor
-Edit
-Copy code
 venv\Scripts\activate
 En MacOS/Linux:
-bash
 
-Verify
-
-Open In Editor
-Edit
-Copy code
 source venv/bin/activate
 Verifica que tienes todas las dependencias instaladas:
 
@@ -93,9 +76,6 @@ pip install flask-sqlalchemy
 pip install flask-cors
 pip install pymysql
 pip install cryptography
-
-
-
 
 
 Hasta ahora se ha configurado la estructura básica del backend con Flask. Ahora necesitamos:
